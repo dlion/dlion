@@ -1,1 +1,1 @@
-![Metrics](https://github.com/dlion/dlion/blob/main/github-metrics.svg)
+<img alt="🦁" align="left" width="400px" src="https://github.com/dlion/dlion/blob/main/metrics.svg">
