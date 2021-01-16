@@ -30,3 +30,4 @@ jobs:
           plugin_habits_charts: yes
           config_timezone: Europe/Paris
           config_padding: 10%
+          debug_flags: --cakeday --hireable --halloween
