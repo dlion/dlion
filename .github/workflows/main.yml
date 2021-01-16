@@ -31,3 +31,6 @@ jobs:
           config_timezone: Europe/Paris
           config_padding: 10%
           debug_flags: --cakeday --hireable --halloween
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_limit: 0
