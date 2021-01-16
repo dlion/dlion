@@ -26,7 +26,6 @@ jobs:
           base: "activity, community, metadata"
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          config_timezone: Europe/Paris
           config_padding: 10%
           
       - name: Calendar
@@ -73,8 +72,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
+          plugin_habits_from: 220
+          plugin_habits_days: 15
           plugin_habits_facts: yes
           plugin_habits_charts: yes
           plugin_stars: yes
