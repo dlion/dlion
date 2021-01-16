@@ -13,10 +13,21 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
+          base: "header, repositories"
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           config_timezone: Europe/Paris
           config_padding: 10%
+      
+      - name: Personal Activities
+        uses: lowlighter/metrics@latest
+        with:
+          filename: activity.svg
+          base: "activity, community, metadata"
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          config_timezone: Europe/Paris
+          config_padding: 10%:  
           
       - name: Calendar
       # See action.yml for all options
