@@ -29,6 +29,7 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          base: ""
           
       - name: Plugin Languages
         uses: lowlighter/metrics@latest
@@ -39,6 +40,8 @@ jobs:
           plugin_languages: yes
           plugin_languages_ignored: "Yacc, css, vim, html, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, Makefile, Ruby, Vim Script, Python, ApacheConf" # List of comma separated languages to ignore
           plugin_languages_skipped: "" # List of comma separated repositories to skip
+          base: ""
+
       
       - name: Plugin Posts Dev.to
         uses: lowlighter/metrics@latest
@@ -48,6 +51,8 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_posts: yes
           plugin_posts_source: dev.to
+          base: ""
+
           
       - name: Plugin Habits
         uses: lowlighter/metrics@latest
@@ -60,6 +65,8 @@ jobs:
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          base: ""
+
           
       - name: Plugin Topics
         uses: lowlighter/metrics@latest
@@ -70,3 +77,5 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: mastered
           plugin_topics_limit: 0
+          base: ""
+
