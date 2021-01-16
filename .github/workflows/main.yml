@@ -19,7 +19,7 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
-          plugin_languages_ignored: "Yacc, css, vim, html, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, Makefile, Ruby, Vim Script, Python" # List of comma separated languages to ignore
+          plugin_languages_ignored: "Yacc, css, vim, html, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, Makefile, Ruby, Vim Script, Python, ApacheConf" # List of comma separated languages to ignore
           plugin_languages_skipped: "" # List of comma separated repositories to skip
           plugin_posts: yes
           plugin_posts_source: dev.to
