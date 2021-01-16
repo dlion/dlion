@@ -27,7 +27,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           config_timezone: Europe/Paris
-          config_padding: 10%:  
+          config_padding: 10%
           
       - name: Calendar
       # See action.yml for all options
