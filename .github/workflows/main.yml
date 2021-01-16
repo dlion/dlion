@@ -66,7 +66,9 @@ jobs:
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          plugin_stargazers: yes
           base: ""
+          config_timezone: Europe/Paris
 
           
       - name: Plugin Topics
