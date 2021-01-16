@@ -22,4 +22,4 @@ jobs:
           plugin_languages_ignored: "Yacc" # List of comma separated languages to ignore
           plugin_languages_skipped: "" # List of comma separated repositories to skip
           plugin_posts: yes
-          plugin_posts_source: https://domenicoluciani.com
+          plugin_posts_source: dev.to
