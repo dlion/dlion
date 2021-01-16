@@ -52,6 +52,10 @@ jobs:
           plugin_languages_ignored: "Yacc, css, vim, html, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, Makefile, Ruby, Vim Script, Python, ApacheConf" # List of comma separated languages to ignore
           plugin_languages_skipped: "" # List of comma separated repositories to skip
           base: ""
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_limit: 0
+          config_padding: 10%
 
       
       - name: Plugin Posts Dev.to
@@ -80,16 +84,3 @@ jobs:
           plugin_stars_limit: 4
           base: ""
           config_timezone: Europe/Paris
-
-          
-      - name: Plugin Topics
-        uses: lowlighter/metrics@latest
-        with:
-          filename: topics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_topics: yes
-          plugin_topics_mode: mastered
-          plugin_topics_limit: 0
-          base: ""
-
