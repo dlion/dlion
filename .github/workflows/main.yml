@@ -9,27 +9,64 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      # See action.yml for all options
-      - uses: lowlighter/metrics@latest
+      - name: Personal metrics
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          config_timezone: Europe/Paris
+          config_padding: 10%
+          
+      - name: Calendar
+      # See action.yml for all options
+        uses: lowlighter/metrics@latest
+        with:
+          filename: calendar.svg
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
           # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          
+      - name: Plugin Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_languages: yes
           plugin_languages_ignored: "Yacc, css, vim, html, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, Makefile, Ruby, Vim Script, Python, ApacheConf" # List of comma separated languages to ignore
           plugin_languages_skipped: "" # List of comma separated repositories to skip
+      
+      - name: Plugin Posts Dev.to
+        uses: lowlighter/metrics@latest
+        with:
+          filename: posts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_posts: yes
           plugin_posts_source: dev.to
+          
+      - name: Plugin Habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          config_timezone: Europe/Paris
-          config_padding: 10%
+          
+      - name: Plugin Topics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_topics: yes
           plugin_topics_mode: mastered
           plugin_topics_limit: 0
