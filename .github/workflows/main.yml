@@ -93,9 +93,9 @@ jobs:
           base: ""
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 1633187                           # Stackoverflow user id (required)
-          plugin_stackoverflow_sections: answers-top, questions-recent # Display top answers and recent questions
+          plugin_stackoverflow_sections: answers-top # Display top answers and recent questions
           plugin_stackoverflow_limit: 2                                # Display 2 entries per section
-          plugin_stackoverflow_lines: 4                                # Display 4 lines per entry
+          plugin_stackoverflow_lines: 2                                # Display 4 lines per entry
 
       - name: Rss Plugin
         uses: lowlighter/metrics@latest
@@ -105,4 +105,4 @@ jobs:
           base: ""
           plugin_rss: yes
           plugin_rss_source: https://domenicoluciani.com/feed.xml  # RSS feed
-          plugin_rss_limit: 4                                  # Limit to 6 items
+          plugin_rss_limit: 5                                  # Limit to 6 items
