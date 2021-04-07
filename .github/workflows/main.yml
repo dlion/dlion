@@ -84,3 +84,14 @@ jobs:
           plugin_stars_limit: 4
           base: ""
           config_timezone: Europe/Paris
+          
+      - name: Plugin Stackoverflow
+        uses: lowlighter/metrics@latest
+        with:
+          filename: stack.svg
+          base: ""
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 1633187                           # Stackoverflow user id (required)
+          plugin_stackoverflow_sections: answers-top, questions-recent # Display top answers and recent questions
+          plugin_stackoverflow_limit: 2                                # Display 2 entries per section
+          plugin_stackoverflow_lines: 4                                # Display 4 lines per entry
