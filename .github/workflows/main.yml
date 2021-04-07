@@ -89,6 +89,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: stack.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 1633187                           # Stackoverflow user id (required)
@@ -100,6 +101,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: rss.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_rss: yes
           plugin_rss_source: https://domenicoluciani.com/feed.xml  # RSS feed
