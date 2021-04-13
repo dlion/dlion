@@ -7,4 +7,4 @@
 <img alt="🦁" align="left" width="400px" src="https://github.com/dlion/dlion/blob/main/stack.svg">
 
 </p>
-<a href="https://ko-fi.com/I2I23YM3I"><img alt="buy me a coffee" align="right" src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
+<a href="https://ko-fi.com/I2I23YM3I"><img alt="buy me a coffee" width="250px" align="right" src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
