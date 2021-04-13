@@ -94,8 +94,8 @@ jobs:
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 1633187                           # Stackoverflow user id (required)
           plugin_stackoverflow_sections: answers-top # Display top answers and recent questions
-          plugin_stackoverflow_limit: 2                                # Display 2 entries per section
-          plugin_stackoverflow_lines: 2                                # Display 4 lines per entry
+          plugin_stackoverflow_limit: 1                                # Display 2 entries per section
+          plugin_stackoverflow_lines: 1                                # Display 4 lines per entry
 
       - name: Rss Plugin
         uses: lowlighter/metrics@latest
